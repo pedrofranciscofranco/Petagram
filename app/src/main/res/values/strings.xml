@@ -3,4 +3,6 @@
     <string name="numerodelike">5</string>
     <string name="nombremascota">nombre</string>
     <string name="estrella">estrella</string>
+    <string name="contacto">Contacto</string>
+    <string name="acerca_de">Acerca de</string>
 </resources>

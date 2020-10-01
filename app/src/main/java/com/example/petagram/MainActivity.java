@@ -99,6 +99,19 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(afavoritos);
                     return true;
 
+                case R.id.menu_Contacto:
+
+                    Intent aContacto = new Intent(this, Contacto.class);
+                    startActivity(aContacto);
+                    return true;
+
+                case R.id.menu_Acercade:
+
+                    Intent aAcercade = new Intent(this, bio.class);
+                    startActivity(aAcercade);
+                    return true;
+
+
                 default:
 
                     return super.onOptionsItemSelected(item);

@@ -12,6 +12,16 @@
         android:title="@string/estrella"
         app:showAsAction="ifRoom"/>
 
+    <item
+        android:id="@+id/menu_Contacto"
+        android:title="@string/contacto"
+        android:orderInCategory="1"/>
+
+    <item
+        android:id="@+id/menu_Acercade"
+        android:title="@string/acerca_de"
+        android:orderInCategory="2"/>
+
 
 
 </menu>
