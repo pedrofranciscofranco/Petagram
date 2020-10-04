@@ -75,9 +75,10 @@ public  class SendEmailService {
             message.setFrom(new InternetAddress(username));
             message.setRecipients(
                     Message.RecipientType.TO,
-                    InternetAddress.parse("pedrofranciscofranco@hotmail.com")
+                    //InternetAddress.parse("pedrofranciscofranco@hotmail.com")
+                    InternetAddress.parse(to)
             );
-            message.setSubject("contraseña de cuenta de prueba de gmail");
+            message.setSubject(subjet);
             message.setText(text);
 
             Transport.send(message);

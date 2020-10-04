@@ -12,6 +12,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 
@@ -19,6 +20,8 @@ import androidx.recyclerview.widget.RecyclerView;
 public class eladaptador extends RecyclerView.Adapter<eladaptador.DatosViewHolder>{
 
     ArrayList<Datos> Datos;
+
+
 
     public eladaptador(ArrayList<Datos> Datos){
 
@@ -42,8 +45,31 @@ public class eladaptador extends RecyclerView.Adapter<eladaptador.DatosViewHolde
         holder.imganimales.setImageResource(datos.getFoto());
         holder.tvnombre.setText(datos.getNombredeanimal());
         holder.tvlike.setText(datos.getLike());
+/*
+        holder.imganimales.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+      //          holder.imgAnimalesperfilmascota.setImageResource(datos.getFoto());
+     //           PerfilMascota.fotitodeperfil= datos.getNombredeanimal();
+       //         MainActivity.viewPager.setCurrentItem(1);
 
+            }
+        });
 
+ */
+
+/*
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PerfilMascota.fotitodeperfil=datos.getFoto();
+                MainActivity.viewPager.setCurrentItem(1);
+            }
+        });
+
+ */
+
+/*
 
         holder.Iblike.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +79,9 @@ public class eladaptador extends RecyclerView.Adapter<eladaptador.DatosViewHolde
 
             }
         });
+
+*/
+
 
     }
 
@@ -68,14 +97,19 @@ public class eladaptador extends RecyclerView.Adapter<eladaptador.DatosViewHolde
         private TextView tvnombre;
         private TextView tvlike;
         private ImageButton Iblike;
+        private CardView cardView;
+
 
 
         public DatosViewHolder(@NonNull View itemView) {
             super(itemView);
             imganimales = itemView.findViewById(R.id.imgAnimales);
-            tvnombre = itemView.findViewById(R.id.Tvnombre);
-            tvlike = itemView.findViewById(R.id.Tvlike);
-            Iblike = itemView.findViewById(R.id.IbHuesoblanco);
+            tvnombre    = itemView.findViewById(R.id.Tvnombre);
+            tvlike      = itemView.findViewById(R.id.Tvlike);
+            Iblike      = itemView.findViewById(R.id.IbHuesoblanco);
+            cardView    = itemView.findViewById(R.id.cardview);
+
+
 
 
         }
